@@ -19,6 +19,165 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Certifications Section */
+
+/* Certifications Section */
+.certifications__card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.certification__card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--clr-bg-alt);
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 700px;
+  min-height: 200px;
+  gap: 1.5rem;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Icon Styling */
+.certification__icon {
+  width: 90px; /* Large enough for clear visibility */
+  height: 90px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* Content Layout */
+.certification__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+/* Title Styling */
+.certification__title {
+  font-size: 1.6rem; /* Larger for better visibility */
+  font-weight: 700; /* Bold weight for emphasis */
+  color: var(--clr-primary); /* Highlighted color */
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* Issuer and Date */
+.certification__issuer {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--clr-fg-alt); /* Slightly lighter text for contrast */
+  margin-bottom: 0.3rem;
+}
+
+.certification__date,
+.certification__id {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--clr-fg);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Description Styling */
+.certification__description {
+  font-size: 0.95rem;
+  color: var(--clr-fg);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+/* Section Highlights & Skills */
+.certification__section h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--clr-primary);
+  margin-bottom: 0.3rem;
+}
+
+.certification__list {
+  margin-left: 1.2rem;
+}
+
+.certification__list li {
+  font-size: 0.9rem;
+  color: var(--clr-fg);
+  line-height: 1.6;
+  list-style-type: disc; /* Adds bullets */
+}
+
+/* Credential Link */
+.certification__link {
+  font-size: 0.95rem;
+  color: var(--clr-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  margin-top: 1rem;
+}
+
+.certification__link:hover {
+  text-decoration: none;
+  color: var(--clr-fg-alt);
+}
+
+
+/* Animation States */
+.fade-out {
+  opacity: 0;
+  transform: translateX(-20px); /* Slide out to the left */
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateX(0); /* Slide back in */
+}
+
+
+
+
+
+
+.spin-out {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.5s ease-in-out;
+}
+
+.spin-in {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+
+.certification__icon {
+  max-width: 120px; /* Set a fixed size for icons */
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.certification__content {
+  text-align: flex;
+}
+
+.certification__link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--clr-primary);
+  text-decoration: underline;
+}
+
+
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;

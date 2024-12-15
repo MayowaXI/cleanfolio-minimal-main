@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Mayowa's Portfolio - Cloud Computing and DevOps Specialist" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mayowa - Cloud Computing Portfolio</title>
+  </head>
+  <body class="light" id="top">
+    <!-- Header -->
+    <header class="header center">
+      <h3>
+        <a href="#top" class="link">M.</a>
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- About Section -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Mayowa.</span></h1>
+        <h2 class="about__role">
+          <span id="dynamic-role">Cloud Computing student specializing in multi-cloud architectures and DevOps</span>
+        </h2>
+        <p class="about__desc">
+          I am passionate about designing and implementing scalable cloud solutions using AWS, Azure, and GCP. 
+          With expertise in automation tools like Terraform and Ansible, I excel in building and managing multi-cloud environments. 
+          My focus is on delivering efficient DevOps practices, optimizing platform performance, and driving innovation in cloud technologies.
+        </p>
+
+        <div class="about__contact center">
+          <a
+  href="index.html"
+  aria-label="Live Preview"
+  class="link link--icon"
+>
+  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+</a>
+
+
+          <a
+            href="https://github.com/MayowaXI"
+            aria-label="GitHub"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://linkedin.com/MayowaXI"
+            aria-label="LinkedIn"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+      
+        <div class="projects__grid">
+          <!-- Project 1 -->
+          <div class="project">
+            <h3>Online Calculator</h3>
+            <p class="project__description">
+              Designed and implemented a serverless AWS architecture for an online calculator. 
+              Utilized AWS Lambda for backend computations, Cognito for user authentication, 
+              DynamoDB for data storage, and Amplify for frontend deployment.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">AWS Lambda</li>
+              <li class="project__stack-item">Cognito</li>
+              <li class="project__stack-item">DynamoDB</li>
+              <li class="project__stack-item">Amplify</li>
+              <li class="project__stack-item">API Gateway</li>
+            </ul>
+            <a
+              href="https://github.com/MayowaXI/cloudcalculator"
+              aria-label="Source Code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          
+
+            <a
+            href="index.html"
+              aria-label="Live Preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+      
+          <!-- Project 2 -->
+          <div class="project">
+            <h3>CloudShop: Scalable E-Commerce Platform</h3>
+            <p class="project__description">
+              CloudShop is an e-commerce platform built with React and deployed to Amazon S3 using an automated CI/CD pipeline with AWS CloudBuild. 
+              It leverages Amazon DynamoDB for backend data management and Redux for seamless state handling, offering a responsive and user-friendly interface styled with Chakra UI.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">AWS CloudBuild (CI/CD Pipeline)</li>
+              <li class="project__stack-item">Amazon S3</li>
+              <li class="project__stack-item">Amazon DynamoDB</li>
+              <li class="project__stack-item">Redux</li>
+              <li class="project__stack-item">Chakra UI</li>
+            </ul>
+            <a
+              href="https://github.com/MayowaXI"
+              aria-label="Source Code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+  href="https://github.com/MayowaXI/techlines"
+  aria-label="Live Preview"
+  class="link link--icon"
+>
+  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+</a>
+
+          </div>
+      
+          <!-- Project 3 -->
+          <div class="project">
+            <h3>Multi-Cloud Infrastructure Design</h3>
+            <p class="project__description">
+              Designed and built a multi-cloud infrastructure for scalable and reliable applications. 
+              Used Terraform for infrastructure-as-code, Ansible for automation, and Consul for Service Mesh. 
+              Integrated CI/CD pipelines for seamless deployment across AWS, Azure, and GCP.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Terraform</li>
+              <li class="project__stack-item">Ansible</li>
+              <li class="project__stack-item">Consul</li>
+              <li class="project__stack-item">CI/CD</li>
+              <li class="project__stack-item">AWS/Azure/GCP</li>
+            </ul>
+            <a
+              href="https://github.com/MayowaXI"
+              aria-label="Source Code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+  href="index.html"
+  aria-label="Live Preview"
+  class="link link--icon"
+>
+  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+</a>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+<!-- Skills -->
+<section class="section skills" id="skills">
+  <h2 class="section__title">Skills</h2>
+  <ul class="skills__list">
+    <li class="skills__list-item btn btn--plain">AWS</li>
+    <li class="skills__list-item btn btn--plain">Azure</li>
+    <li class="skills__list-item btn btn--plain">Google Cloud Platform (GCP)</li>
+    <li class="skills__list-item btn btn--plain">Terraform</li>
+    <li class="skills__list-item btn btn--plain">Ansible</li>
+    <li class="skills__list-item btn btn--plain">Docker</li>
+    <li class="skills__list-item btn btn--plain">Kubernetes</li>
+    <li class="skills__list-item btn btn--plain">Python</li>
+    <li class="skills__list-item btn btn--plain">JavaScript</li>
+    <li class="skills__list-item btn btn--plain">CI/CD Pipelines</li>
+    <li class="skills__list-item btn btn--plain">Platform Management</li>
+    <li class="skills__list-item btn btn--plain">Cloud Security</li>
+    <li class="skills__list-item btn btn--plain">Data Analysis</li>
+    <li class="skills__list-item btn btn--plain">Documentation and Training</li>
+    <li class="skills__list-item btn btn--plain">Collaboration and Communication</li>
+  </ul>
+</section>
+
+
+
+      <!-- Contact Section -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:dotunfadiran@gmail.com" class="btn btn--outline">Email me</a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__text">
+        &copy; 2024 Mayowa. All Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- Scroll-to-Top Button -->
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const typed = new Typed("#dynamic-role", {
+          strings: [
+            "Cloud Computing student specializing in multi-cloud architectures and DevOps",
+            "Passionate about scalable cloud solutions",
+            "Expert in AWS, Azure, and GCP",
+            "Automation enthusiast with Terraform and Ansible",
+            "DevOps practitioner delivering innovative cloud solutions"
+          ],
+          typeSpeed: 60,
+          backSpeed: 40,
+          backDelay: 1500,
+          loop: true,
+          smartBackspace: true,
+          showCursor: true,
+          cursorChar: "|",
+        });
+      });
+    </script>
+  </body>
+</html>
